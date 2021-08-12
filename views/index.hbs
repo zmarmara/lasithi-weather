@@ -1,0 +1,160 @@
+<!DOCTYPE html>
+<html
+  lang="en">
+  <head>
+    <meta charset="utf-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <meta name="description" content="" />
+    <title>Lasithi Weather: We tell the weather AND the coffee</title>
+    <script defer src="https://use.fontawesome.com/releases/v5.3.1/js/all.js"></script>
+    <link
+      rel="stylesheet"
+      href="https://bulma.io/css/bulma-docs.min.css?v=202108022306"
+    />
+  </head>
+  <body class="layout-default">
+    <nav id="navbar" class="bd-navbar navbar">
+      <div class="navbar-brand">
+        <a class="navbar-item" href="\">
+          <img
+            src="logo.png"
+            alt="Lasithi Weather App"
+            width="112"
+            height="28"
+          />
+        </a>
+      </div>
+      <div id="navMenuIndex" class="navbar-menu">
+        <div
+          id="navbarStartOriginal"
+          class="navbar-start bd-navbar-start bd-is-original">
+          <a
+            class="
+              navbar-item
+              bd-navbar-item bd-navbar-item-expo bd-navbar-item-base"
+            href="https://cretaweather.gr/tzermiadolive/">
+            <span class="icon has-text-expo">
+              <i class="fas fa-camera"></i>
+            </span>
+            <span>Lasithi Live Camera</span>
+          </a>
+          <div class="navbar-item bd-navbar-sponsor-button is-hidden-desktop">
+            <a class="button is-sponsor is-light">
+              <span class="icon is-small">
+                <i class="fas fa-thumbs-up"></i>
+              </span>
+            </a>
+          </div>
+          <div class="navbar-item bd-navbar-download-button is-hidden-touch">
+            <a
+              class="button is-sponsor is-light love">
+              <span class="icon is-small">
+                <i class="fas fa-thumbs-up"></i>
+              </span>
+              <span> Our Sponsor </span>
+            </a>
+          </div>
+        </div>
+      </div>
+    </nav>
+    <section class="bd-hello">
+      <div class="bd-hello-body">
+        <div class="bd-hello-content bd-index-content">
+          <h1 class="title has-text-black">
+            <strong>Lasithi Weather</strong>: 
+			<br />
+			the <strong>one</strong>
+            Lasithi app 
+            <br />
+            that just <strong>works</strong>.
+          </h1>
+
+          <div class="content">
+            <p>
+              Lasithi web app is the one app that tells you 
+			  what coffee to order depending on the Lasithi weather.
+            </p>
+            <div class="icon-text has-text-success">
+              <span class="icon">
+                <i class="fas fa-check-square"></i>
+              </span>
+              <strong>We tell the weather 🌞 AND the coffee ☕.</strong>
+            </div>
+          </div>
+          <nav class="bd-hello-buttons buttons">
+            <a
+              class="button love bd-fat-button is-primary">
+              <span>Your coffee is ready!</span>
+            </a>
+          </nav>
+        </div>
+        <div class="bd-hello-media">
+           <!-- Hello box -->       
+  <div class="box">
+  <article class="media">
+    <div class="media-left">
+      <figure class="image is-128x128">
+        <img src={{coffeeImage}} alt="{{coffee}}">
+      </figure>
+    </div>
+    <div class="media-content">
+      <div class="content">
+        <p>
+           {{hello}}
+        </p>
+        <strong>You are drinking {{coffee}} today!</strong>
+      </div>
+      <nav class="level is-mobile">
+        <div class="level-left">
+          <a class="level-item has-text-right" aria-label="retweet" href="https://twitter.com/intent/tweet?url=https%3A%2F%2Fgoo.gl%2Fmaps%2F3t9SjFbap1S9L1pV8">
+            <span class="icon is-small">
+              <i class="fas fa-retweet" aria-hidden="true"></i>
+            </span>
+          </a>
+          <a class="level-item has-text-right" aria-label="like" href="https://www.facebook.com/sharer.php?u=https%3A%2F%2Fgoo.gl%2Fmaps%2F3t9SjFbap1S9L1pV8">
+            <span class="icon is-small">
+              <i class="fas fa-heart" aria-hidden="true"></i>
+            </span>
+          </a>
+        </div>
+      </nav>
+    </div>
+  </article>
+</div>
+        <!-- /Hello box -->
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+    <!-- Modals -->
+  <div class="modal moulaxalis">
+  <div class="modal-background"></div>
+  <div class="modal-card">
+    <header class="modal-card-head">
+      <p class="modal-card-title">Μουλαχαλής Snack & Coffee</p>
+      <button class="delete unlove" aria-label="close"></button>
+    </header>
+    <section class="modal-card-body">
+      <!-- Content ... -->
+    <div class="media">
+      <div class="media-left">
+        <figure class="image is-96x96">
+          <img src="images/moulaxalis.png" alt="Moulahalis Coffee">
+        </figure>
+      </div>
+      <div class="media-content">
+        <p class="title is-4">Enjoy your coffee at Moulahalis!</p>
+        <p class="subtitle is-6">You are invited to enjoy your coffee in the Lasithi Plateau, surrounded by the imposing heights of the Dikti Mountains!</p>
+      </div>
+      </div>
+      <figure class="image is-16by9">
+     <iframe class="has-ratio" width="640" height="360" src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d6520.315783749205!2d25.484922050290404!3d35.20253588308625!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x0%3A0xec4b89021952e559!2zzpzOv8-FzrvOsc-HzrHOu86uz4IgU25hY2sgJiBDb2ZmZWU!5e0!3m2!1sen!2sgr!4v1628767342722!5m2!1sen!2sgr" style="border:0;" allowfullscreen="" loading="lazy"></iframe>
+     </figure>
+    </section>
+  </div>
+</div>  
+  </body>
+<script src="modal.js"></script>
+</html>
